@@ -28,13 +28,5 @@ public class DataBaseConnection {
         return connection;
     }
 
-    
-    
-    public static boolean isConnectionValid() {
-        try {
-            return connection != null && connection.isValid(2); // Vérifie en 2 secondes max
-        } catch (SQLException e) {
-            return false;
-        }
-    }
+   
 }

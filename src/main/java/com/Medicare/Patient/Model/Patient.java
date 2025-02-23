@@ -2,23 +2,24 @@ package com.Medicare.Patient.Model;
 
 public class Patient {
 	int idPatient ;
-	String userName;
+	
+	String fullname;
 	String email;
 	String phoneNumber;
 
 
+public Patient () {}
 
-
-public Patient (int idPatient , String userName , String email ,String phoneNumber) {
+public Patient (int idPatient , String fullname , String email ,String phoneNumber) {
 	this.idPatient =idPatient; 
-	this.userName = userName; 
+	this.fullname = fullname; 
 	this.email =email; 
 	this.phoneNumber =phoneNumber; 
 	
 }
 
-public Patient (String userName , String email ,String phoneNumber) { 
-	this.userName = userName; 
+public Patient (String fullname , String email ,String phoneNumber) { 
+	this.fullname = fullname; 
 	this.email =email; 
 	this.phoneNumber =phoneNumber; 
 	
@@ -32,13 +33,18 @@ public void setIdPatient(int idPatient) {
 	this.idPatient = idPatient;
 }
 
-public String getUserName() {
-	return userName;
+
+
+
+public String getFullname() {
+	return fullname;
 }
 
-public void setUserName(String userName) {
-	this.userName = userName;
+public void setFullname(String fullname) {
+	this.fullname = fullname;
 }
+
+
 
 public String getEmail() {
 	return email;
@@ -55,6 +61,13 @@ public String getPhoneNumber() {
 public void setPhoneNumber(String phoneNumber) {
 	this.phoneNumber = phoneNumber;
 }
+
+@Override
+public String toString() {
+	return "Patient [fullname=" + fullname + ", email=" + email + ", phoneNumber=" + phoneNumber + "]";
+}
+
+
 
 
 

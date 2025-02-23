@@ -37,11 +37,13 @@
             <div class="col-md-6">
                 <div class="card shadow-lg border-0">
                     <div class="card-body">
-                        <form action="RendezVousServlet" method="post">
-                            <!-- Champ Username -->
+                        <form action="http://localhost:8087/MediCare/AddPatientServlet" method="post">
+                           
+                            
+                            <!-- Champ Fullname -->
                             <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" required>
+                                <label for="fullname" class="form-label">full-name</label>
+                                <input type="text" class="form-control" id="fullname" name="fullname" required>
                             </div>
 
                             <!-- Champ Email -->
@@ -58,7 +60,7 @@
 
                             <!-- Bouton Soumettre -->
                             <div class="d-grid">
-                                <a type="submit" href="patient.jsp" class="btn btn-primary">Enregistrer</a>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </div>
                         </form>
                     </div>

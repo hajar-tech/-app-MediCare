@@ -29,6 +29,7 @@
     </nav>
 
     <!-- Formulaire -->
+    
     <div class="container mt-5">
         <h2 class="text-center">Prendre un Rendez-vous</h2>
         <p class="text-center">Remplissez le formulaire ci-dessous pour réserver un rendez-vous.</p>
@@ -37,8 +38,15 @@
             <div class="col-md-6">
                 <div class="card shadow-lg border-0">
                     <div class="card-body">
-                        <form action="RendezVousServlet" method="post">
+                    
+                    
+                        <form action="http://localhost:8087/MediCare/AddAppointementServlet" method="post">
                            
+                            <!-- Champ Username -->
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
 
                             <!-- Champ Date du rendez-vous -->
                             <div class="mb-3">
@@ -78,6 +86,7 @@
             </div>
         </div>
     </div>
+  
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

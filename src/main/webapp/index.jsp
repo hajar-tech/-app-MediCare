@@ -9,9 +9,7 @@
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
 
-<% Connection connection = DataBaseConnection.getConnection();
-out.print(connection);
-%>
+
 
 
     <div class="container text-center">
@@ -25,7 +23,7 @@ out.print(connection);
                     <div class="card-body">
                         <h3 class="card-title">Espace Patient</h3>
                         <p class="card-text">Prenez et gérez vos rendez-vous en toute simplicité.</p>
-                        <a href="Patient/formulaire.jsp" class="btn btn-primary">Accéder</a>
+                        <a href="View/Patient/formulaire.jsp" class="btn btn-primary">Accéder</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +34,7 @@ out.print(connection);
                     <div class="card-body">
                         <h3 class="card-title">Espace Medcin</h3>
                         <p class="card-text">Consulter et gérez votre agenda en toute simplicité.</p>
-                        <a href="Doctor/doctor.jsp" class="btn btn-success">Accéder</a>
+                        <a href="DislpayAppointement" class="btn btn-success">Accéder</a>
                     </div>
                 </div>
             </div>
